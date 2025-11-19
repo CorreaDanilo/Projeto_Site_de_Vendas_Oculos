@@ -181,7 +181,7 @@ export default function Home() {
       <section className="rodape">
         <p> Gostou do nosso produto?
           <br/>
-           <Link to= "/carrinho">  Compre já! </Link>
+           <Link to= "/colecao">  Compre já! </Link>
            <br/>
 
           <Link to="https://youtu.be/dQw4w9WgXcQ"> Sobre  nós  </Link> 
