@@ -1,0 +1,82 @@
+/* index.css */
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0d1117; /* cor de fundo da página */
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Estilo para confirmação centralizada (toast) */
+.confirmacao {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 14px 18px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+  z-index: 9999;
+  min-width: 260px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* pequena animação de entrada */
+.confirmacao {
+  opacity: 0;
+  animation: fadeInOut 3s forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translate(-50%, -48%) scale(0.98); }
+  10% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  90% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, -48%) scale(0.98); }
+}
+
+/* Estilo para toast de login obrigatório */
+.confirmacao-login-erro {
+  background: rgba(220, 50, 50, 0.95);
+  animation: fadeInOut 4s forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 24px;
+  min-width: 300px;
+}
+
+.btn-ir-login {
+  background: #fff;
+  color: #dc3232;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-ir-login:hover {
+  background: #f0f0f0;
+  transform: scale(1.05);
+}
+/* estilos de toasts adicionais removidos (login-required) */

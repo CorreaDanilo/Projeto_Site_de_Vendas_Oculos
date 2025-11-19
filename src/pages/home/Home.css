@@ -1,0 +1,205 @@
+
+
+/* ESTILO GERAL */
+.home {
+  font-family: "Arial", sans-serif;
+  color: #fff;
+  background-color: #000;
+  overflow-x: hidden;
+}
+
+
+/* video inicial */
+.video-fundo{
+  position: absolute;
+  overflow: hidden;
+  inset: 0;
+  z-index: 0; /* trocar -1 por 0 */
+}
+
+.video-mesmo{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+}
+/* imagem inicial */
+.imagem-inicial {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.texto-inicial {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+   position: relative;
+  z-index: 1;
+}
+
+.texto-inicial h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  justify-content: center;
+  margin-bottom: 20px;
+
+
+
+}
+
+.texto-inicial p {
+  font-size: 1.2rem;
+  color: #eee;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+/* SOBRE O PRODUTO */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 10%;
+  gap: 50px;
+  background-color: #f7f7f7;
+  color: #222;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 1.1rem;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.imagem-2{
+  transition: transform 0.4s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.imagem-2:hover {
+  transform: scale(1.08);  
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  
+
+
+}
+
+
+
+/* IMAGEM FINAL */
+.end-section {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+  background-color: #111;
+}
+
+.end-section img {
+  width: 60%;
+  max-width: 700px;
+  border-radius: 12px;
+  object-fit: cover;
+  
+}
+
+.end-section p{
+  font-size: 2rem;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 20px;
+
+}
+
+.rodape{
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+  background-color: #111;
+}
+
+.rodape p{
+  font-size: 18px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.rodape p:hover{
+    text-decoration: underline;
+
+}
+
+
+
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 300px;
+  }
+
+  .home-overlay h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+  }
+}
+
+/* ========================= */
+/*        GLOBO 3D FINAL     */
+/* ========================= */
+/* ========= GLOBO ========= */
+
+.globe-section {
+  background: #000;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.globe-title {
+  font-size: 2rem;
+  color: #00eaff;
+  margin-bottom: 20px;
+}
+
+.globe-container {
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+}
+
+.globe-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
