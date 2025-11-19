@@ -70,8 +70,17 @@
   justify-content: center;
   padding: 100px 10%;
   gap: 50px;
-  background-color: #f7f7f7;
-  color: #222;
+ background: linear-gradient(
+    to top, /* Direção: da esquerda para a direita */
+    #132a5c,  /* Cor inicial (vermelho) */
+    rgb(255, 255, 255)/* Cor final (azul) */
+  );  color: #000000;
+}
+
+.about-section p{
+   font-size: 1.2rem;
+  color: #000000;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 .about-text {
@@ -82,7 +91,9 @@
 .about-text h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  justify-content: center;
+  display: flex;
 
 }
 
@@ -117,9 +128,11 @@
 .end-section {
   display: flex;
   justify-content: center;
-  padding: 80px 0;
-  background-color: #111;
-}
+background: linear-gradient(
+    to top, /* Direção: da esquerda para a direita */
+    #132a5c,  /* Cor inicial (vermelho) */
+    #132a5c/* Cor final (azul) */
+  );  color: #d4d4d4;}
 
 .end-section img {
   width: 60%;
@@ -151,10 +164,10 @@
   font-weight: 600;
 }
 
-.rodape p:hover{
+.rodape p a:hover{
     text-decoration: underline;
 
-}
+} /* O "a" serve pra ficar com sublinhado SÓ PRA LINKS  */
 
 
 

@@ -123,7 +123,7 @@ export default function Home() {
       <section className="imagem-inicial">
         <div className="video-fundo">
           <video autoPlay muted loop className="video-mesmo">
-            <source src="/imagens/video-oculos.mp4" type="video/mp4" />
+            <source src="/imagens/video-oculos3.mov" type="video/mp4" />
           </video>
         </div>
         <div className="texto-inicial">
@@ -153,7 +153,7 @@ export default function Home() {
 
       {/* IMAGEM FINAL */}
       <section className="end-section">
-        <p> Veja os lugares onde chegamos!</p>
+        <p> Onde chegamos:</p>
       </section>
 
       {/* GLOBO 3D - ÚLTIMA SEÇÃO */}
@@ -182,6 +182,9 @@ export default function Home() {
         <p> Gostou do nosso produto?
           <br/>
            <Link to= "/carrinho">  Compre já! </Link>
+           <br/>
+
+          <Link to="https://youtu.be/dQw4w9WgXcQ"> Sobre  nós  </Link> 
         </p>
 
       </section>
